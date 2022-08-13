@@ -35,6 +35,10 @@ body{
     display: flex;
     align-items: center;
 }
+.Flex3 {
+    display: flex;
+    flex-direction: column;
+}
 
 .Botao {
     text-decoration: none;
@@ -147,6 +151,25 @@ main h2 {
     margin-top: 10px;
 }
 
+/* one page */
+#onepage {
+    padding: 50px 10px;
+}
+
+#onepage h2 {
+    margin-bottom: 10px;
+}
+
+#onepage p {
+    margin-bottom: 25px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    border: 0;
+}
+
 /* Smartphone Ladscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px){
     
@@ -154,12 +177,20 @@ main h2 {
     .Container {
         max-width: 540px;
     }
+    /* Destaque */
+    main h1, main h2 {
+        text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+
+    /* one page */
+   /* one page */
+   #video iframe {
+        width: 560px;
+        height: 315px;
+    }
+
 }
 
-/* destaque */
-main h1, main h2 {
-    text-shadow: #000 0.05em 0.05em 0.05em;
-}
 
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -181,6 +212,12 @@ main h1, main h2 {
     main h2 {
         font-size: 2em;
     }
+    /* one page */
+    #video iframe {
+        width: 560px;
+        height: 315px;
+    }
+    
 }
 
 
@@ -194,6 +231,10 @@ main h1, main h2 {
     /* Destaque */
     main {
         height: 70vh;
+    }
+    #video iframe {
+        width: 560px;
+        height: 315px;
     }
 }
 
@@ -247,6 +288,11 @@ main h1, main h2 {
     #destaqueSobre img {
         border-radius: 50%;
         margin-right: 50px;
+    }
+    /* one page */
+    .Flex3 {
+        flex-direction: row;
+        align-items: center;
     }
 }
 
